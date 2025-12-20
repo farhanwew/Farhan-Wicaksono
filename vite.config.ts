@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       // Base URL for GitHub Pages. Change 'portfolio-minimalis' to your repository name if different.
-      base: '/Farhan-Wicaksono/',
+      base: '/',
       server: {
         port: 5173,
         host: '0.0.0.0',
