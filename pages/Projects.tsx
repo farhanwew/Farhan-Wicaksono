@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                     </h3>
                     <span className="text-sm text-stone-400 font-mono">{project.year}</span>
                   </div>
-                  <p className="text-stone-600 leading-relaxed max-w-xl mb-4">
+                  <p className="text-stone-600 leading-relaxed max-w-2xl mb-4 text-justify">
                     {project.description}
                   </p>
                   

@@ -1,4 +1,25 @@
-import { Project, Experience, Writing } from './types';
+import { Project, Experience, Writing, Skill, Education } from './types';
+import { 
+  SiPython, 
+  SiJavascript, 
+  SiHtml5, 
+  SiCss3, 
+  SiPytorch, 
+  SiHuggingface, 
+  SiScikitlearn, 
+  SiFastapi, 
+  SiReact, 
+  SiGit, 
+  SiDocker,
+  SiPostgresql,
+  SiTensorflow,
+  SiMlflow,
+  SiOpenai,
+  SiPandas
+} from 'react-icons/si';
+import { FaBrain, FaImage } from 'react-icons/fa6';
+import { VscVscode } from 'react-icons/vsc';
+import { DiJava } from 'react-icons/di';
 
 export const PORTFOLIO_OWNER = {
   name: "Farhan Arya Wicaksono",
@@ -20,7 +41,9 @@ export const NAVIGATION = [
 ];
 
 export const SECTION_TITLES = {
-  about: "Experiences & Skills",
+  education: "Education",
+  experience: "Experience",
+  skills: "Skills",
   projects: "My Projects",
   blogs: "Blogs, Articles, dan Writings"
 };
@@ -48,6 +71,45 @@ export const PROJECTS: Project[] = [
   }
 ];
 
+export const EDUCATIONS: Education[] = [
+  {
+    id: '1',
+    institution: "Institut Teknologi Sepuluh Nopember (ITS)",
+    degree: "Bachelor's Degree in Rekayasa Kecerdasan Artifisial (AI Engineering)",
+    period: "2023 - Present"  
+  }
+];
+
+export const SKILLS: Skill[] = [
+  {
+    category: "Languages",
+    items: [
+      { name: "Python", icon: SiPython },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "Java", icon: DiJava },
+      { name: "SQL", icon: SiPostgresql },
+    ]
+  },
+  {
+    category: "Machine Learning & AI",
+    items: [
+      { name: "PyTorch", icon: SiPytorch },
+      { name: "Hugging Face", icon: SiHuggingface },
+      { name: "Scikit-learn", icon: SiScikitlearn },
+      { name: "Tensorflow", icon: SiTensorflow }, 
+      { name: "Mlflow", icon: SiMlflow },
+      { name: "Pandas", icon: SiPandas },
+    ]
+  },
+  {
+    category: "Development & Tools",
+    items: [
+      { name: "Git", icon: SiGit },
+      { name: "Docker", icon: SiDocker },
+      { name: "FastAPI", icon: SiFastapi }
+    ]
+  }
+];
 export const EXPERIENCES: Experience[] = [
 ];
 
