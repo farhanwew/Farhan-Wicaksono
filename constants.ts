@@ -30,7 +30,7 @@ export const PORTFOLIO_OWNER = {
   github: "https://github.com/farhanwew",
   linkedin: "https://www.linkedin.com/in/farhan-arya-wicaksono/ ",
   kaggle: "https://www.kaggle.com/farhanwew",
-  avatarUrl: "https://avatars.githubusercontent.com/u/154995211?v=4"
+  avatarUrl: "https://i.ibb.co.com/zTwNyZ3n/foto-gw-selpi.jpg"
 };
 
 export const NAVIGATION = [
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     tags: ["FastAPI", "HTML", "CSS", "JavaScript"],
     year: "2023",
     category: "Web Development",
-    demoUrl: "#",
+    demoUrl: "https://finsight.up.railway.app",
     githubUrl: "https://github.com/farhanwew/FinSight_V2"
   }
 ];
@@ -117,7 +117,7 @@ export const WRITINGS: Writing[] = [
   {
     id: '1',
     title: "Transfer Learning Menggunakan LoRA+ pada Llama 3.2 untuk Percakapan Bahasa Indonesia",
-    description: "Penelitian mengenai optimasi model Llama 3.2 untuk percakapan dalam Bahasa Indonesia menggunakan teknik LoRA+.",
+    description: "This  research  explores  the  application  of  the  Parameter-Efficient  Finetuning  (PEFT) method  Low-Rank  Adaptation+  (LoRA+)  on  the  transfer  learning  of  Llama  3.2  1B,  a  large language  model  (LLM).  ",
     date: "2 Mei 2025",
     readTime: "30 min read",
     link: "https://publikasi.dinus.ac.id/technoc/article/view/12508/5290"

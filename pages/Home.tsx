@@ -8,7 +8,7 @@ const Home: React.FC = () => {
         <h1 className="font-serif text-3xl sm:text-4xl leading-tight text-stone-900 flex-1 max-w-xl tracking-tight">
           {PORTFOLIO_OWNER.bio}
         </h1>
-        <div className="w-32 h-32 sm:w-40 sm:h-40 flex-shrink-0 bg-stone-200 rounded-full overflow-hidden border border-stone-300">
+        <div className="w-110 h-110 sm:w-60 sm:h-60 flex-shrink-0 bg-stone-200 rounded-full overflow-hidden border border-stone-300">
            <img src={PORTFOLIO_OWNER.avatarUrl} alt={PORTFOLIO_OWNER.name} className="w-full h-full object-cover" />
         </div>
       </div>
