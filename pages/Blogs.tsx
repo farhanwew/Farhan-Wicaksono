@@ -17,11 +17,11 @@ const Blogs: React.FC = () => {
             rel="noopener noreferrer" 
             className="block group"
           >
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline border-b border-stone-200 pb-4 group-hover:border-stone-400 transition-colors">
-              <h3 className="font-serif text-lg text-stone-800 group-hover:text-accent transition-colors duration-300 mb-2 sm:mb-0">
+            <div className="flex flex-row flex-wrap justify-between items-baseline gap-2 border-b border-stone-200 pb-4 group-hover:border-stone-400 transition-colors">
+              <h3 className="font-serif text-lg text-stone-800 group-hover:text-accent transition-colors duration-300 mb-0">
                 {post.title}
               </h3>
-              <div className="flex items-center gap-4 text-xs text-stone-400 font-mono">
+              <div className="flex items-center gap-4 text-xs text-stone-400 font-mono whitespace-nowrap">
                 <span>{post.date}</span>
                 <span>{post.readTime}</span>
               </div>

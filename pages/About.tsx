@@ -12,7 +12,7 @@ const About: React.FC = () => {
         </h2>
         <div className="space-y-12">
           {EDUCATIONS.map((edu) => (
-            <div key={edu.id} className="group grid sm:grid-cols-[120px_1fr] gap-4 sm:gap-8 cursor-default border-b border-stone-200 pb-12 last:border-0 last:pb-0">
+            <div key={edu.id} className="group grid grid-cols-[80px_1fr] sm:grid-cols-[120px_1fr] gap-4 sm:gap-8 cursor-default border-b border-stone-200 pb-12 last:border-0 last:pb-0">
               <span className="text-sm text-stone-400 font-mono pt-1">{edu.period}</span>
               <div>
                 <h3 className="font-medium text-stone-900 group-hover:text-accent transition-colors duration-300 mb-1">{edu.institution}</h3>
@@ -37,7 +37,7 @@ const About: React.FC = () => {
         <div className="space-y-12">
           {EXPERIENCES.length > 0 ? (
             EXPERIENCES.map((exp) => (
-              <div key={exp.id} className="group grid sm:grid-cols-[120px_1fr] gap-4 sm:gap-8 cursor-default border-b border-stone-200 pb-12 last:border-0 last:pb-0">
+              <div key={exp.id} className="group grid grid-cols-[80px_1fr] sm:grid-cols-[120px_1fr] gap-4 sm:gap-8 cursor-default border-b border-stone-200 pb-12 last:border-0 last:pb-0">
                 <span className="text-sm text-stone-400 font-mono pt-1">{exp.period}</span>
                 <div>
                   <h3 className="font-medium text-stone-900 group-hover:text-accent transition-colors duration-300 mb-1">{exp.role}</h3>

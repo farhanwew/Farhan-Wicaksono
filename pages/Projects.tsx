@@ -30,11 +30,11 @@ const Projects: React.FC = () => {
             <div className="space-y-12 pl-2 border-l-2 border-stone-100">
               {groupedProjects[category].map((project) => (
                 <div key={project.id} className="group pl-4">
-                  <div className="flex flex-col sm:flex-row sm:items-baseline justify-between mb-2">
+                  <div className="flex flex-row flex-wrap items-baseline justify-between gap-2 mb-2">
                     <h3 className="font-serif text-xl text-stone-800 group-hover:text-accent transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <span className="text-sm text-stone-400 font-mono">{project.year}</span>
+                    <span className="text-sm text-stone-400 font-mono whitespace-nowrap">{project.year}</span>
                   </div>
                   <p className="text-stone-600 leading-relaxed max-w-2xl mb-4 text-justify">
                     {project.description}
