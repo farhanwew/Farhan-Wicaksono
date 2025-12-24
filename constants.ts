@@ -25,7 +25,7 @@ export const PORTFOLIO_OWNER = {
   name: "Farhan Arya Wicaksono",
   role: "",
   bio: "I’m Farhan, an undergraduate student  with a strong interest in building data-driven and intelligent systems. I have experience in machine learning, data engineering, and software development, and I enjoy exploring emerging technologies to continuously expand my technical capabilities.",
-  location: "Cilegon, Indonesia",
+  location: "Serang, Indonesia",
   email: "farhan17wicaksono@gmail.com",
   github: "https://github.com/farhanwew",
   linkedin: "https://www.linkedin.com/in/farhan-arya-wicaksono/ ",
