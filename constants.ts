@@ -15,11 +15,14 @@ import {
   SiTensorflow,
   SiMlflow,
   SiOpenai,
-  SiPandas
+  SiPandas,
+  SiGrafana,
+  SiGithub
 } from 'react-icons/si';
 import { FaBrain, FaImage } from 'react-icons/fa6';
 import { VscVscode } from 'react-icons/vsc';
 import { DiJava } from 'react-icons/di';
+import { GiThunderBlade } from 'react-icons/gi';
 
 export const PORTFOLIO_OWNER = {
   name: "Farhan Arya Wicaksono",
@@ -55,7 +58,7 @@ export const PROJECTS: Project[] = [
     description: "Implementation of Parameter-Efficient Fine-Tuning for diffusion models",
     tags: ["Python", "PyTorch", "Huggingface", "PEFT"],
     year: "2025",
-    category: "Machine Learning",
+    category: "AI / Machine Learning",
     demoUrl: "https://www.spuun.art/blog/llada-peft/lada-id",
     githubUrl: "https://github.com/kcv-if/fp-kcvanguard-workshop-2025/tree/main/llada-peft"
   },
@@ -64,11 +67,22 @@ export const PROJECTS: Project[] = [
     title: "FinSight - Financial Management Platform for UMKM",
     description: "FinSight is a comprehensive financial management platform designed to help Indonesian UMKM (Usaha Mikro, Kecil, dan Menengah) make better business decisions through smart financial analysis, cash flow predictions, and AI-based business recommendations.",
     tags: ["FastAPI", "HTML", "CSS", "JavaScript"],
-    year: "2023",
+    year: "2025",
     category: "Web Development",
     demoUrl: "https://finsight.up.railway.app",
     githubUrl: "https://github.com/farhanwew/FinSight_V2"
+  },
+    {
+    id: '3',
+    title: "Comparative Performance Analysis of Medical LLMs through QLoRA Adaptation",
+    description: "This project aims to develop a reliable and safe Indonesian-language medical chatbot specifically focused on digestive system health. We analyzed and fine-tuned 7 open-source Large Language Models (LLMs) using QLoRA (Quantized Low-Rank Adaptation) on a dataset of 21,376 doctor-patient Q&A pairs sourced from Alodokter.",
+    tags: ["PyTorch", "Huggingface", "QLoRA", "Unsloth"],
+    year: "2025",
+    category: "AI / Machine Learning",
+    demoUrl: "https://huggingface.co/spaces/farwew/Chatbot-Medis",
+    githubUrl: "https://github.com/farhanwew/FP-NLP"
   }
+
 ];
 
 export const EDUCATIONS: Education[] = [
@@ -105,8 +119,11 @@ export const SKILLS: Skill[] = [
     category: "Development & Tools",
     items: [
       { name: "Git", icon: SiGit },
+      {name :"Github", icon: SiGithub },
+      { name: "VS Code", icon: VscVscode },
       { name: "Docker", icon: SiDocker },
-      { name: "FastAPI", icon: SiFastapi }
+      { name: "FastAPI", icon: SiFastapi },
+      { name :"Grafana", icon: SiGrafana },
     ]
   }
 ];

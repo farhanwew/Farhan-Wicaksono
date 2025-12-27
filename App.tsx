@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import { PORTFOLIO_OWNER, NAVIGATION } from './constants';
+
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const Navigation: React.FC = () => {
   const location = useLocation();
@@ -36,6 +46,7 @@ const Navigation: React.FC = () => {
 const App: React.FC = () => {
   return (
     <Router basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
       <div className="min-h-screen font-sans text-stone-800 selection:bg-stone-200 selection:text-stone-900">
         <Navigation />
 
